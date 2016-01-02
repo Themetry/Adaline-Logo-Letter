@@ -10,3 +10,75 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  adaline-logo-letter
 */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Logo Letter
+	## Universal styles
+	## Site header specific
+	## Slide menu specific 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Logo Letter
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Universal styles
+--------------------------------------------------------------*/
+
+.logo-letter {
+	cursor: default;
+	display: inline-block;
+	font-family: 'Playfair Display', serif;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+## Site header specific
+--------------------------------------------------------------*/
+
+.site-header > .logo-letter {
+	background: rgba(0,0,0,.85);
+	color: #ffff00;
+	left: 0;
+	line-height: 1.25;
+	height: 84px;
+	margin-top: -42px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(-90deg);
+	width: 84px;
+}
+
+/*--------------------------------------------------------------
+## Slide menu specific
+--------------------------------------------------------------*/
+
+.slide-menu .logo-letter {
+	color: #fff;
+	height: 118px;
+	margin: 21px 0 32px;
+	position: relative;
+	width: 118px;
+}
+
+.slide-menu .logo-letter span {
+	line-height: 1.75;
+	position: relative;
+	z-index: 1;
+}
+
+.slide-menu .logo-letter:after {
+	background: #000;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: rotate(45deg) scale(.70710763017);
+	-webkit-transform: rotate(45deg) scale(.70710763017); /* Remove when webkit doesn't require prefix */
+	width: 100%;
+}
